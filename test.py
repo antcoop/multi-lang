@@ -9,12 +9,12 @@ array = list(range(1,301))
 def fizzBuzz(arr):
   for num in arr:
     if (num % 15 == 0):
-      print("% s Fizz Buzz"% str(num).rjust(3, '0'))
+      print(f"{num} Fizz Buzz")
     elif (num % 5 == 0):
-      print("% s Buzz"% str(num).rjust(3, '0'))
+      print(f"{num} Buzz")
     elif (num % 3 == 0):
-      print("% s Fizz"% str(num).rjust(3, '0'))
+      print(f"{num} Fizz")
     else:
-      print(str(num).rjust(3, '0'))
+      print(num)
 
 fizzBuzz(array)
